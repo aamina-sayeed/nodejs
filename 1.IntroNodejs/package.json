@@ -1,0 +1,21 @@
+{
+  "name": "1.intronodejs",
+  "version": "1.0.0",
+  "description": "Nodejs intro",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "AAMINA",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "dotenv": "^16.0.3",
+    "minimist": "^1.2.8",
+    "progress": "^2.0.3",
+    "prompt-sync": "^4.2.0",
+    "readline": "^1.3.0",
+    "readline-sync": "^1.4.10"
+  }
+}

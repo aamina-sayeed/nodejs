@@ -1,0 +1,5 @@
+1.Go to nodejs website download it 
+2.Install it and check if its installed using \
+node -v and npm -v commands.
+
+Gives version of node and npm.

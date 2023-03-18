@@ -1,0 +1,21 @@
+1.Nodejs is opensource ,cross-platform JS runtime Environment.
+2.It runs the V8 JS engine used in google chrome.
+3.It runs a single process ,is event driven and non-blocking for 
+concurrent requests on single thread.
+
+Advantages:
+1.Used for both front end and backend using only JS.
+2.MANY MODULES.
+3.Fast Performance using V8 JS engine.
+4.Single Async thread so lightweight .
+5.Fast to market.
+6.Cross platoform-making apis.
+7.libs and packages.
+
+Apps that can be made using nodejs:
+
+1.Streaming web apps like Netflix and Amazon. 
+2.REal time apps like chat instant messaging .
+3.MERN apps like Ecommerce ,payments ,social media apps like LInkdeln
+and Medium.
+
