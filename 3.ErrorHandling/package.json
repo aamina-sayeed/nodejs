@@ -1,0 +1,16 @@
+{
+  "name": "3.errorhandling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "error.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon error.js"
+  },
+  "keywords": [],
+  "author": "AAMINA",
+  "license": "ISC",
+  "optionalDependencies": {
+    "chalk": "^5.2.0"
+  }
+}
