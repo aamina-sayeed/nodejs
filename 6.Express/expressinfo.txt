@@ -1,0 +1,11 @@
+Its a popular nodejs framework
+which provides features of web and mobile apps
+sits on top of nodejs 
+Features:
+faster server side app development
+provides middleware which have acess to req and res object-helps chaining of routing
+routing -how endpoint uri responds to client req
+template engine-enables use of statitc template files in our app so in runtime
+replace vars 
+with actual values and turn it into html file
+debugging-has debug modules internally 
