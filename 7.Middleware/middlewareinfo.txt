@@ -1,0 +1,9 @@
+
+
+-Middle ware are fns that have access to req,res object and next middleware fn in the req-res cycle
+ex:app.get('/',function(req,res,next){-the middelware function
+    next()-when we do ops on req/res after that we need to call the next fn then our app listens to port
+})
+
+-'/' is the path for which the middleware applies
+-here req,res are args to mddleware fns and next is a callback to middleware function
