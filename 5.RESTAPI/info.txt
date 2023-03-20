@@ -1,0 +1,25 @@
+Crud Actions: (movie is resource name)
+
+get all movies    
+get movie
+create movie
+update movie
+delete movie
+
+http method:
+
+get 
+get 
+post
+put 
+delete
+
+End points:
+
+/api/movies
+/api/movies/:id
+/api/movies
+/api/movies/:id
+/api/movies/:id
+
+Screenshot (41).png
