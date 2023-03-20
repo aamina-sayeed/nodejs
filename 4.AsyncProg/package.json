@@ -1,0 +1,16 @@
+{
+  "name": "4.asyncprog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "async.js",
+  "type": "module",
+  "scripts": {
+    "start": "node async.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
