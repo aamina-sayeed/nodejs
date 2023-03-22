@@ -1,0 +1,89 @@
+>It contains cluster>collections which acts like db and stores data in json format
+>Create an account>
+create a project>
+create a cluster>
+>create a collection
+>select add own data and then create a database
+>then get vs extension of mongodb
+>add your current ip address in network access section on the left menu
+>then click on connect using mongodb compass copy the link change password and collection name
+>then in vscode go to mingodb and select connect through a string and paste the link
+>then go to mongodb site and under cluster click on connect and connect to application
+>copy the link paste it in .env file as CONNECTION_STRING after changing password and 
+collection name
+>create a folder config create a dbConnection file ,$npm i mongoose coz using mongoose which is object model design schema 
+for entities like contacts or user from collection we can connect db to project.
+>dbConnection file code:
+import mongoose from "mongoose"
+import dotenv from "dotenv"
+
+dotenv.config()
+
+export const connectDb=async()=>{
+try{
+
+    const connect=await mongoose.connect(process.env.CONNECTION_STRING)
+    console.log(
+        "Database Connected:",
+        connect.connection.host,
+        connect.connection.name
+    )
+}catch(err){
+    
+    console.log(err)
+    process.exit(1)
+
+}
+
+}
+
+>Create schema in models folder as conctactModel.js file for db structure
+with code like :
+
+import mongoose from "mongoose"
+
+const contactSchema=mongoose.Schema({
+    //fields that we want in contact object
+    name:{
+        type:String,
+        required:[true,"Please add the contact name"]//required :true means ,adatory to fill the field
+    },
+
+    email:{
+        type:String,
+        required:[true,"Please add the email address"]//required :true means ,adatory to fill the field
+    },
+
+    phone:{
+        type:String,
+        required:[true,"Please add the contact phone number"]//required :true means ,adatory to fill the field
+    },
+
+    
+    },
+
+    {
+        timestamps:true,//to add timestamps
+    }
+)
+
+
+export const Contact=mongoose.model("Contact",contactSchema)
+
+
+>Mongoose schema. 
+A Mongoose schema defines the structure of the document, default values, validators, etc.,
+>whereas a Mongoose model provides an interface to the database for creating, querying, 
+ updating, deleting records, etc
+
+Methods include:
+
+await model.find()
+
+await model.findbyIdandUpdate(id,req.body,{new:true})
+
+//{new:true} to return modified version not original
+
+await model.remove() etc
+
+In this case Contact.methods add await coz mongodb deals with promises
