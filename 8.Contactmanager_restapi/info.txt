@@ -21,5 +21,14 @@ End points:
 /api/contacts
 /api/contacts/:id
 /api/contacts/:id
-
 like Screenshot (41).png
+
+
+Validation of access token:
+
+To pass Bearer Token either go to auth>BearerToken and paste the jwt access token or
+go to hearers add Authorization header  and in value write Bearer and paste the jwt accesstoken
+
+
+To understand ref in contactMOdel.js check this link out :
+https://dev.to/ifeanyichima/what-is-ref-in-mongoosejs-4o2h#:~:text=The%20ref%20option%20is%20what,model%20to%20use%20during%20population%20.

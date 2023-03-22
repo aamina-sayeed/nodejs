@@ -76,7 +76,7 @@ A Mongoose schema defines the structure of the document, default values, validat
 >whereas a Mongoose model provides an interface to the database for creating, querying, 
  updating, deleting records, etc
 
-Methods include:
+Methods include:always include waitin methods
 
 await model.find()
 
